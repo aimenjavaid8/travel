@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:root {
+   --body-clr : #efefef;
+   --bg-clr : #ffa725;
+   --main-heading :#6A8E7F;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 0px;
+    border: 2px solid var(--bg-clr);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: var(--bg-clr);
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    color: var(--bg-clr);
+    background-color: #ffffff;
+    border: 2px solid var(--bg-clr);
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+}
+
+/*nav section start*/
+.navbar {
+   background-color: var(bg-clr);
+   padding: 12px 7% 0px;
+   transition: all 0.5s ease;
+}
+
+.navbar .navbar-brand img {
+    width: 100px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.navbar .navbar-brand span {
+    color: var(--bg-clr);
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 550;
+    color: #000000;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: var(--bg-clr);
+}
+
+.navbar .open-icon {
+  display: none;
+  font-size: 30px;
+}
+
+.navbar .close-icon {
+  display: inline-block;
+  
+  font-size: 30px;
+}
+
+.navbar .navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+.navbar .navbar-toggler.collapsed .open-icon {
+  display: inline-block;
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:focus,
+.navbar .close-icon:focus,
+.navbar .open-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/*nav section end*/
+
+/*home section start*/
+.home {
+    padding: 90px 11% 90px;
+    transition: all 0.5s ease;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+.home .img {
+    flex: 1 1 300px;
+}
+
+.home .img img {
+    width: 100%;
+}
+
+.home .home-content {
+    flex: 1 1 400px;
+}
+
+.home .home-content p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.home .home-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--main-heading);
+}
+
+.home .home-content h4 {
+    font-size: 17px;
+}
+
+.home .home-content .btn {
+    margin-top: 15px;
+}
+/*home section end*/
+
+/*offers section start*/
+.offers {
+    padding: 100px 11% 40px;
+    background-color: var(--body-clr);
+    transition: all 0.5s ease;
+}
+
+.offers .offer-content {
+    padding: 15px 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.offers .offer-content i {
+    font-size: 32px;
+    color: var(--bg-clr);
+    margin-bottom: 10px;
+}
+
+.offers .offer-content h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--main-heading);
+}
+
+.offers .offer-content p {
+    font-size: 15px;
+    line-height: 26px;
+}
+/*offers section end*/
+
+/*popular section start*/
+.popular {
+    padding: 60px 11% 40px;
+    transition: all 0.5s ease;
+
+    position: relative;
+}
+
+.popular .card {
+    color: #000000;
+    margin-top: 40px;
+    font-weight: 900;
+    border: none;
+}
+
+.popular .card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.popular .card h3 {
+    font-size: 22px;
+}
+
+.popular .card h6 {
+    font-size: 13px;
+}
+/*popular section end*/
+
+/*about section start*/
+.about {
+    padding: 100px 11% 100px;
+    background-color: var(--body-clr);
+    transition: all 0.5s ease;
+}
+
+.about .about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .about-content {
+    margin-top: 20px;
+}
+
+.about .about-content h5 {
+    font-size: 17px;
+}
+
+.about .about-content h2 {
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--main-heading);
+}
+
+.about .about-content p {
+    font-size: 15px;
+}
+/*about section end*/
+
+/*packages section start*/
+.packages {
+    padding: 100px 11% 100px;
+    transition: all 0.5s ease;
+}
+
+.packages .package-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.packages .package-content img {
+    width: 100%;
+}
+
+.packages .package-content .package-detail {
+    padding: 10px 8px 12px 10px;
+}
+
+.packages .package-content .package-detail h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: var(--main-heading);
+}
+
+.packages .package-content .package-detail span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.packages .package-content .package-detail .rating {
+    font-size: 17px;
+    color: var(--bg-clr);
+    margin-top: 10px;
+}
+
+.packages .package-content .package-detail .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.packages .package-content .package-detail .price h5 {
+    font-size: 14px;
+    color: var(--main-heading);
+}
+
+.packages .package-content .package-detail .price .package-btn {
+    padding: 8px 10px;
+    border-radius: 0px;
+    border: 2px solid var(--bg-clr);
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background: var(--bg-clr);
+    color: #ffffff;
+}
+
+.packages .package-content .package-detail .price .package-btn:hover {
+    color: var(--bg-clr);
+    background-color: #ffffff;
+    border: 2px solid var(--bg-clr);
+
+}
+/*packages section end*/
+
+/*reviews section start*/
+.reviews {
+    padding: 100px 11% 100px;
+    transition: all 0.5s ease;
+}
+
+.reviews .review-carousel .review-card{
+	padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reviews .review-carousel .review-card .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.reviews .review-carousel .review-card .profile .profile-image {
+    width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 15px;
+}
+
+.reviews .review-carousel .review-card .profile .profile-image img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.reviews .review-carousel .review-card .profile .profile-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .review-carousel .review-card .profile .profile-desc span {
+    color: var(--main-heading);
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.reviews .review-carousel .review-card .profile .ratings i {
+    font-size: 17px;
+	color: var(--bg-clr);
+	cursor: pointer;
+}
+
+.reviews .review-carousel .review-card p {
+    font-size: 14px;
+    margin-top: 13px;
+    line-height: 25px;
+}
+
+.owl-dots{
+	margin-top: 20px !important;
+}
+.owl-dots .owl-dot span{
+	background-color: #dee0e7 !important;
+	padding: 6px !important;
+}
+.owl-dot.active span{
+	background-color: var(--main-heading) !important;
+}
+/*rewiews section end*/
+
+/*contact section start*/
+.contact {
+    padding: 100px 11% 100px;
+    background: var(--body-clr);
+    transition: all 0.5s ease;
+}
+
+.contact .contact-detail {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid var(--bg-clr);
+    box-shadow: 12px 12px var(--bg-clr);
+}
+
+.contact .contact-detail h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-detail p {
+    font-size: 14px;
+}
+
+.contact .contact-detail h6 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-detail h6 span {
+    color: var(--main-heading);
+}
+
+.contact .contact-booking h4 {
+    font-size: 20px;
+}
+
+.contact form input, .contact form textarea {
+    font-size: 14px;
+    color: var(--main-heading);
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+/*contact section end*/
+
+/*footer section start*/
+.footer {
+    padding: 60px 11% 15px;
+    transition: all 0.5s ease;
+}
+
+.footer .footer-logo {
+    width: 70px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 12px;
+	text-align: justify;
+	padding-right: 35px;
+	color: #000000;
+}
+
+.footer h4 {
+    font-size: 19px;
+    color: var(--main-heading);
+    margin-bottom: 15px;
+}
+
+.footer ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer .social {
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer .social i {
+    color: var(--bg-clr);
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.footer hr{
+	margin-top:10px;
+	background:#efefef;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 13px;
+}
+.footer .copyright span {
+    color: var(--bg-clr);
+    font-size: 15px;
+}
+/*footer section end*/
+
+/*scrolltotop section start*/
+#scroll-to-top {
+   background-color: var(--bg-clr);
+   color: #ffffff;
+   padding: 5px 10px;
+   font-size: 17px;
+   border: none;
+   position: fixed;
+   bottom: 30px;
+   right: 20px;
+   cursor: pointer;
+   display: none;
+}
+/*scrolltotop section end*/
